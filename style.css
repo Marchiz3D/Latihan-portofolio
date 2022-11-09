@@ -1,0 +1,240 @@
+:root {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+
+.background {
+    position: relative;
+    background-image: url(img/abstract-g62d828c29_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.opening-text {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    transform: scale(0.8);
+}
+
+ul.navigasi {
+    background-color: black;
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    padding: 1em 2em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon {
+    width: 45px;
+    float: left;
+    margin: 0 0.3em;
+}
+
+#about-me {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.section-intro,
+.section-edu,
+.section-skill {
+    text-align: center;
+}
+
+.text-saya {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 24em;
+    text-align: justify;
+    margin: 1em auto;
+}
+
+.icon-about {
+    margin-top: 1em;
+    width: 10em;
+}
+
+.icon-about {
+    max-width: 12em;
+}
+
+.section-edu,
+.section-skill {
+    display: inline-block;
+    margin-top: 5em;
+    vertical-align: top;
+}
+
+#portofolio {
+    width: 100%;
+    padding: 2em 0;
+}
+
+#portofolio h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content img {
+    display: inline-block;
+    max-width: 300px;
+    width: 90%;
+}
+
+hr {
+    max-width: 500px;
+}
+
+#contact h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form-isi {
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+
+.inputan label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.inputan input {
+    width: 100%;
+}
+
+.inputan textarea {
+    width: 100%;
+}
+
+.inputan {
+    width: 65%;
+    padding: 0.5em 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.submit-btn {
+    font-size: 1.1em;
+    width: 65%;
+    background-color: teal;
+    color: white;
+    border: none;
+    height: 45px;
+}
+
+.info-us {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+.h3-mobile {
+    display: none;
+}
+
+.info-hl {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.info-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    margin: 1.5em;
+}
+
+.info-text {
+    display: inline-block;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 1.5em 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon.dekstop {
+        display: none;
+    }
+    ul.navigasi {
+        text-align: center;
+    }
+    .form-isi {
+        width: 100%;
+    }
+    .inputan {
+        width: 85%;
+    }
+    .inputan label {
+        padding-bottom: 5px;
+    }
+    .inputan input {
+        padding-top: 5px;
+    }
+    .submit-btn {
+        width: 85%;
+    }
+    .info-us {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .info-us .h3-mobile {
+        display: block;
+        text-align: center;
+        font-size: 1.17em;
+    }
+    .info-us .info-text {
+        display: block;
+    }
+    .content img {
+        margin: 0.5em auto;
+    }
+    .info-text {
+        display: none;
+    }
+    .icon-about,
+    .text-saya {
+        width: 80%;
+        margin: 0.3em auto;
+    }
+}
